@@ -1,0 +1,169 @@
+@media (max-width:$lg){
+    .container{
+        width: $md - 20px;
+
+    }
+    .products{
+        .grid{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .box{
+            width: 350px;
+        }
+    }
+    .name{
+        width: 90px;
+    }
+    nav{
+       display: flex;
+       justify-content: space-around;
+    }
+    .hero_right{
+        img{
+            width: 100%;
+        }
+
+    }    
+        .hero_left{
+        h1{
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+
+
+
+}
+.java{
+ height: 200px;    
+
+}
+.partner{
+    display: none;
+}
+.middle{
+    display: none;
+}
+
+}
+@media (max-width:$md){
+    .container{
+        width: $sm - 20px;
+    }
+    .links,.label{
+        display: none;
+
+    }
+    .nav{
+        display: none;
+    }
+    header{
+        .search{
+            display: block;
+        }
+     .sider{
+    display: block;
+   }
+   .hero{
+    display: block;
+      .hero_left{
+        margin-left: 70px;
+        h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 12px;
+            width: 250px;
+        }
+    }
+        .hero_right{
+        img{
+            width: 100%;
+        }
+    }
+ 
+   }
+
+}
+.bar{
+    display: block;
+    text-align: center;
+}
+.java{
+    height: 220px;
+    .input{
+        width: 155px;
+    }
+    .right_position{
+        display: inline-block;
+        width: 280px;
+    }
+    .sxs{
+        width: 70px;
+    }
+}
+.futer_menu{
+    img{
+        margin-left: 100px;
+    }
+}
+.products{
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box_head{
+        margin-left: 3px;
+    }
+    .box{
+        width: 280px;
+    }
+}
+
+
+   .partner{
+    display: none;
+   }
+   .products{
+    .box{
+        width: 355px;
+    }
+    img{
+        width: 450px;
+    }
+}
+.second{
+    display: none;
+}
+   }
+
+@media (max-width:$sm){
+    .container{
+        width:100%;
+    }
+    .hero_left{
+        margin-left: 0px;
+        h1{
+            font-size: 1rem;
+
+        }
+        h2{
+            font-size: 10px;
+        }
+        p{
+            width: 200px;
+        }
+    }
+    .products{
+        .box{
+            width: 355px;
+        }
+        img{
+            width: 450px;
+        }
+    }
+.hero_left{
+    text-align: center;
+}
+}

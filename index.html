@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Monito</title>
+    <style>
+        .loader{
+            background-color: #FCEED5;
+            position:fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: grid;
+            place-items: center;
+            animation: yoqol .5s linear 3s both  ;
+            
+        }
+        .loading{
+            width: 150px;
+            height: 150px;
+            background: conic-gradient(white,black);
+            border-radius:50%;
+            animation: aylanish 1s ease-in-out infinite ;
+        }
+        @keyframes aylanish {
+            to{
+                transform: rotate(360deg);
+            }    
+        }
+        @keyframes yoqol {
+            to{
+                visibility: hidden;
+                opacity: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="loading">
+
+        </div>
+    </div>
+
+    <header class="main-header">
+        <nav class="container flex ">
+            <div class="sider">
+                <label for="aside"><i class="fa-solid hide fa-list"></i></label>
+                <input type="checkbox" id="aside" hidden/>
+                <aside class="sidebar">
+                    <label for="aside"><i class="fa-solid white fa-x"></i></label>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="label1">
+              
+                        <i class="fa-regular $blue fa-magnifying-blue">
+                             <input type="search" class="name" name="name"  placeholder="Search something here!">
+                             <label for="name"></label>
+                             <button class="btn"><a  href="#">Join the community</a></button>
+                        </i>
+                       
+                        
+                    </div>
+                </aside>
+            </div>
+
+            <div class="logo"><img src="images/icons/logo.png" alt=""></div>
+            
+            <ul class="links flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div><i class="fa-solid search fa-magnifying-glass"></i></div>
+
+            <div class="label">
+              
+                <i class="fa-regular $blue fa-magnifying-blue">
+                     <input type="search" class="name" name="name"  placeholder="Search something here!">
+                     <label for="name"></label>
+                </i>
+               
+                <button class="btn"><a  href="#">Join the community</a></button>
+            </div>
+            <select name="language" class="nav">
+                <option value="en">Eng</option>
+                <option value="ru">Ru</option>
+                <option value="uzb">Uzb</option>
+            </select> 
+        </nav>
+
+        <div class="hero container flex">
+            <div class="hero_left">
+                <h1>One more friend</h1>
+                <h2>Thousands more fun!</h2>
+                <p>Having a pet means you have more joy, a new friend, a
+                 happy person who will always be with you to have fun. We 
+                 have 200+ different pets that can meet your needs!</p>
+                 <div class="buttons">
+               <a class="span" href="#">View Intro<i class="fa-regular fa-circle-play"></i></a>
+               <a class="span2" href="#">Explore Now</a>
+            </div>
+            </div>
+            <div class="hero_right">
+                <img width="760" src="images/Products/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1 (1).png" alt="">
+            </div>
+        </div>
+
+    </header>
+    <section class="middle container">
+        <h3>Whats new?</h3>
+        <div class="middle_1">
+        <h4>Take a look at some of our pets</h4>
+        <a class="span" href="#">View Intro<i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    </section>
+    <section class="products">
+        <div class="container grid">
+            <div class="box">
+                <img src="images/Puppy/puppy-1.jpg" alt="">
+                <h3>MO231 - Pomeranian White</h3>
+                <h4>Gene:Male-Age:02 months</h4>
+               <h5>6.900.000 VND</h5>
+               </div>
+               <div class="box"><img src="images/Puppy/puppy-2.jpg" alt="">
+                   <h3>MO502 - Poodle Tiny Yellow</h3>
+                   <h4>Gene:Male-Age:02 months</h4>
+                   <h5>3.900.000 VND</h5></div> 
+               <div class="box"><img src="images/Puppy/puppy-3.jpg" alt="">
+                   <h3>MO102 - Poodle Tiny Sepia</h3>
+                   <h4>Gene:Male-Age:02 months</h4>
+                   <h5>4.000.000 VND</h5></div>
+               <div class="box"><img src="images/Puppy/puppy-4.jpg" alt="">
+                   <h3>MO512 - Alaskan Malamute Grey</h3>
+                   <h4>Gene:Male-Age:02 months</h4>
+                   <h5>8.900.000 VND</h5></div>
+               <div class="box"><img src="images/Puppy/puppy-5.jpg" alt="">
+                   <h3>MO231 - Pomeranian White</h3>
+                   <h4>Gene:Male-Age:02 months</h4>
+                   <h5>7.900.000 VND</h5></div>
+               <div class="box"> <img src="images/Puppy/puppy-6.jpg" alt="">
+                   <h3>MO502 - Pembroke Corgi Tricolor</h3>
+                   <h4>Gene:Male-Age:02 months</h4>
+                   <h5>9.000.000 VND</h5></div>
+               <div class="box"><img src="images/Puppy/puppy-7.jpg" alt="">
+                   <h3>MO231 - Pomeranian White</h3>
+                   <h4>Gene:Male-Age:02 months</h4>
+                   <h5>6.500.000 VND</h5></div>
+               <div class="box"> <img src="images/Puppy/puppy-8.jpg" alt=""><h3>MO231 - Pomeranian White</h3>
+                   <h4>Gene:Male-Age:02 months</h4>
+                   <h5>5.000.000 VND</h5></div>
+               </div>
+        </div>
+    </section>
+
+    <div class="card container flex">
+        <div class="hero_right">
+        <img width="760" src="images/explore.png" alt="">
+    </div>
+        <div class="hero_left">
+            <h1>One more friend</h1>
+            <h2>Thousands more fun!</h2>
+            <p>Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!!</p>
+             <div class="buttons">
+           <a class="span" href="#">View Intro<i class="fa-regular fa-circle-play"></i></a>
+           <a class="span2" href="#">Explore Now</a>
+        </div>
+        </div>
+
+    </div>
+        <section class="middle container">
+            <h3>Hard to choose right products for your pets?</h3>
+            <div class="middle_1">
+            <h4>Our Products</h4>
+            <a class="span" href="#">View Intro<i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        </section>
+        <section class="products">
+            <div class="container box_head grid">
+                <div class="box">
+                    <img src="images/Products/product-8.jpg" alt="">
+                    <h3>Reflex Plus Adult Cat<br> Food Salmone</h3>
+                    <h4>Product:Dog-Size:385gm </h4>
+                <h5>140.000 VNDD</h5>
+                <button class="btn butt"><i class="fa-solid fa-gift"></i><a class="a" href=""> Free Toy & Free Shaker</a></button>
+                </div>
+                <div class="box">
+                    <img src="images/Products/product-1.jpg" alt="">
+                    <h3>Reflex Plus Adult Cat<br> Food Salmone</h3>
+                    <h4>Product:Dog-Size:385gm </h4>
+                <h5>165.000 VNDD</h5>
+                <button class="btn butt"><i class="fa-solid fa-gift"></i><a class="a" href=""> Free Toy & Free Shaker</a></button>
+                </div>
+                <div class="box">
+                    <img src="images/Products/product-2.jpg" alt="">
+                    <h3>Reflex Plus Adult Cat<br> Food Salmone</h3>
+                    <h4>Product:Dog-Size:385gm </h4>
+                <h5>1.100.000 VND</h5>
+                <button class="btn butt"><i class="fa-solid fa-gift"></i><a class="a" href=""> Free Toy & Free Shaker</a></button>
+                </div>
+                <div class="box">
+                    <img src="images/Products/product-3.jpg" alt="">
+                    <h3>Reflex Plus Adult Cat<br> Food Salmone</h3>
+                    <h4>Product:Dog-Size:385gm </h4>
+                <h5>1410.000 VND</h5>
+                <button class="btn butt"><i class="fa-solid fa-gift"></i><a class="a" href=""> Free Toy & Free Shaker</a></button>
+                </div>
+                <div class="box">
+                    <img src="images/Products/product-4.jpg" alt="">
+                    <h3>Reflex Plus Adult Cat<br> Food Salmone</h3>
+                    <h4>Product:Dog-Size:385gm </h4>
+                <h5>350.000 VND</h5>
+                <button class="btn butt"><i class="fa-solid fa-gift"></i><a class="a" href=""> Free Toy & Free Shaker</a></button>
+                </div>
+                <div class="box">
+                    <img src="images/Products/product-5.jpg" alt="">
+                    <h3>Reflex Plus Adult Cat<br> Food Salmone</h3>
+                    <h4>Product:Dog-Size:385gm </h4>
+                <h5>500.000 VND</h5>
+                <button class="btn butt"><i class="fa-solid fa-gift"></i><a class="a" href=""> Free Toy & Free Shaker</a></button>
+                </div>
+                <div class="box">
+                    <img src="images/Products/product-6.jpg" alt="">
+                    <h3>Reflex Plus Adult Cat<br> Food Salmone</h3>
+                    <h4>Product:Dog-Size:385gm </h4>
+                <h5>400.000 VND</h5>
+                <button class="btn butt"><i class="fa-solid fa-gift"></i><a class="a" href=""> Free Toy & Free Shaker</a></button>
+                </div>
+                <div class="box">
+                    <img src="images/Products/product-7.jpg" alt="">
+                    <h3>Reflex Plus Adult Cat<br> Food Salmone</h3>
+                    <h4>Product:Dog-Size:385gm </h4>
+                <h5>250.000 VND</h5>
+                <button class="btn butt"><i class="fa-solid fa-gift"></i><a class="a" href=""> Free Toy & Free Shaker</a></button>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="middle container flex">
+            <h4>Proud to be part of<span>Pet Sellers</span></h4>
+            <a class="span" href="#">View all our sellers<i class="fa-solid fa-chevron-right"></i></a>
+        </section>
+        <div class=" partner container flex ">
+            <img   src="images/Partners/partner-1.png" alt="">
+            <img width="50" src="images/Partners/partner-2.png" alt="">
+            <img  width="50"src="images/Partners/partner-3.png" alt="">
+            <img width="50" src="images/Partners/partner-4.png" alt="">
+            <img width="50" src="images/Partners/partner-5.png" alt="">
+            <img width="50" src="images/Partners/partner-6.png" alt="">
+            <img width="50" src="images/Partners/partner-7.png" alt="">
+        </div>
+
+        <div class="card second container flex">
+            <div class="hero_left padding">
+                <h1>Adoption<i class="fa-solid fa-paw"></i></h1>
+                <h2>We need help. so do they.</h2>
+                <p>Adopt a pet and give it a home,<br>
+                    it will be love you back unconditionally.</p>
+                 <div class="buttons">
+               <a class="span" href="#">View Intro<i class="fa-regular fa-circle-play"></i></a>
+               <a class="span2" href="#">Explore Now</a>
+            </div>
+            </div>
+            <div class="hero_right">
+                <img width="760" src="images/adoption.png" alt="">
+            </div>
+    
+        </div>
+        <section class="middle container">
+            <h3>You already know ?</h3>
+            <div class="middle_1">
+            <h4>Useful pet knowledge</h4>
+            <a class="span" href="#">View Intro<i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        </section>
+        <section class="products">
+            <div class="container grid">
+                <div class="box">
+                    <img src="images/knowledge/knowledge-1.jpg" alt="">
+                    <button class="btn"><a href="#">Pet knowledge</a></button>
+                    <h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
+                <p>The Pomeranian, also known as the Pomeranian (Pom dog),
+                is always in the top of the cutest pets. Not only that, the small, 
+                lovely, smart, friendly, and skillful circus dog breed.</p>
+                   </div>
+                   <div class="box"><img src="images/knowledge/knowledge-2.jpg" alt="">
+                    <button class="btn"><a href="#">Dog Diet You Know</a></button>
+                    <h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
+                <p>The Pomeranian, also known as the Pomeranian (Pom dog),
+                is always in the top of the cutest pets. Not only that, the small, 
+                lovely, smart, friendly, and skillful circus dog breed.</p>
+                   </div>
+                   <div class="box"><img src="images/knowledge/knowledge-3.jpg" alt="">
+                    <button class="btn"><a href="#">Pet knowledge</a></button>
+                    <h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
+                <p>The Pomeranian, also known as the Pomeranian (Pom dog),
+                is always in the top of the cutest pets. Not only that, the small, 
+                lovely, smart, friendly, and skillful circus dog breed.</p>
+                   </div>
+               </div>
+            </section>
+
+           <footer >
+                <div class="container java ">
+                    
+                    <div class="left_position">
+                    <h6>Register now so you don't miss our programs</h6>
+                  </div>
+                  <div class="right_position">
+                    <input class="input" type="text" placeholder="Enter your Email">
+                    <button class="btn sxs"><a href="">Subcribe Now</a></button>
+                  </div>
+                </div>
+
+                <div class="container bar flex">
+                    <div class="futer_menu flex">
+                        <ul class="flex">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Category</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+
+                <div class="container bar flex">
+                    <div class="futer_menu flex">
+                       <p>© 2022 Monito. All rights reserved.</p>
+                    </div>
+                    <div class="futer_menu flex">
+                       <img src="images/icons/logo.png" alt="">
+                     </div>
+                    <div class="flex">
+                        <p>Terms of Service          Privacy Policy</p>
+                    </div>
+                </div>
+               
+           </footer>
+
+</body>
+</html>
